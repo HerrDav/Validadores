@@ -41,7 +41,7 @@ BEGIN
 	END
 
 	SET @resto = @soma % 11
-	IF @resto >= 0 and @resto < 2
+	IF @resto < 2
 		SET @digito1 = 0
 	IF @resto >= 2
 		SET @digito1 = 11 - @resto
@@ -62,7 +62,7 @@ BEGIN
 	END
 
 	SET @resto = @soma % 11
-	IF @resto >= 0 and @resto < 2
+	IF @resto < 2
 		SET @digito2 = 0
 	IF @resto >= 2
 		SET @digito2 = 11 - @resto
